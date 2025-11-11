@@ -1,0 +1,17 @@
+{
+  "global": {
+    "max_epochs": 15,
+    "cull_every": 5,
+    "batch_frac": 0.3
+  },
+  "logistic_regression": [
+    { "model": "LogReg", "C": 0.01, "alpha": 0.0001, "eta0": 0.01 },
+    { "model": "LogReg", "C": 0.1, "alpha": 0.001, "eta0": 0.01 },
+    { "model": "LogReg", "C": 1.0, "alpha": 0.0001, "eta0": 0.1 }
+  ],
+  "svm": [
+    { "model": "SVM", "C": 0.1, "kernel": "linear" },
+    { "model": "SVM", "C": 1.0, "kernel": "linear" },
+    { "model": "SVM", "C": 10.0, "kernel": "rbf" }
+  ]
+}
